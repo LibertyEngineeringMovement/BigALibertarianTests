@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html ng-app="appx">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script data-require="angular-ui@*" data-semver="0.4.0" src="http://rawgithub.com/angular-ui/angular-ui/master/build/angular-ui.js"></script>
+    <script src="https://code.angularjs.org/1.3.0-beta.5/angular.js" data-semver="1.3.0-beta.5" data-require="angular.js@*"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.min.js" data-semver="0.11.0" data-require="angular-ui-bootstrap@*"></script>
+    <script data-require="jquery@*" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" data-semver="3.2.0" data-require="bootstrap-css@*" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+    (function(){
+      var appx = angular.module('appx', []);
+      appx.controller('xCtrl', function ($scope) {
+        reset($scope)();
+        $scope.reset = reset($scope);
+        $scope.getTotal = function(){
+          return ($scope.q0 
+            + $scope.q1 
+            + $scope.q2 
+            + $scope.q3 
+            + $scope.q4 
+            + $scope.q5 
+            + $scope.q6 
+            + $scope.q7 
+            + $scope.q8 
+            + $scope.q9);
+        };
+      });
+      function reset($scope){
+        return function(){
+          $scope.currentPanel=0; 
+          $scope.q0 = 0; 
+          $scope.q1 = 0; 
+          $scope.q2 = 0; 
+          $scope.q3 = 0; 
+          $scope.q4 = 0; 
+          $scope.q5 = 0; 
+          $scope.q6 = 0; 
+          $scope.q7 = 0; 
+          $scope.q8 = 0; 
+          $scope.q9 = 0;
+        }
+      }
+    })()
+    </script>
+  </head>
+
+  <body ng-controller="xCtrl" >
+    <div class="container">
+      <div class="page-header">
+        <h1>
+          Is it a tax or theft.<br/><small>A big A libertarian project.</small>
+        </h1>
+      </div>  
+      <div class="well well-sm">
+        <h4>
+        When answering the questions below, 
+        please assume the following:
+      </h4>
+        <ul>
+        <li>Non-compliance will result in actions that include the following:
+          <ol>
+            <li>You may find your property, and wages taken from you.</li>
+            <li>You may find your movement and life constrained to a limited sized cage.</li>
+            <li>You may find your life removed from you by execution or murder.</li>
+          </ol>
+        </li>
+        <li>Enforcers of the following will be people who are wearing matching uniforms.</li>
+        <li>You may seek arbitration, but it will only be through the same organization that enforces compliance.</li>
+      </ul>
+      </div>
+      <div class="well well-sm">
+        <h5>Progress</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{currentPanel}}" aria-valuemin="0" aria-valuemax="9" style="width: {{((currentPanel)/9)*100}}%;">
+            {{currentPanel}} of 9
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" ng-show="(currentPanel===0)">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            If I force money from you,
+            is that theft?
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="btn-group">
+                <button type="button" class="btn btn-info" ng-click="q0 = +1">Yes</button>
+                <button type="button" class="btn btn-warning" ng-click="q0 = -1">No</button>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div ng-show="q0===+1" >This was a trick question for the purpose of determining if you should continue.</div>
+              <div ng-show="q0===-1" >Are you kidding? Stop right there. You have a mental deficiency, and the rest of the test is not applicable to you.</div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-default" ng-click="currentPanel=1">Next</button>
+        </div>
+      </div>
+      <div class="panel panel-default" ng-show="(currentPanel===1)">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            If I force money from you, and:
+            <ul>
+              <li>
+                I have a written note permitting me to do so, 
+              </li>
+            </ul>
+            is that theft?
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="btn-group">
+                <button type="button" class="btn btn-info" ng-click="q1 = +1">Yes</button>
+                <button type="button" class="btn btn-warning" ng-click="q1 = -1">No</button>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div ng-show="q1===+1" >You have just stated that written laws are not enough to justify theft.</div>
+              <div ng-show="q1===-1" >So you think a bank robber passing a note to a bank teller to empty their cash drawers is legitamate.</div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-default" ng-click="currentPanel=2">Next</button>
+        </div>
+      </div>      
+      <div class="panel panel-default" ng-show="(currentPanel===2)">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            If I force money from you, and:
+            <ul>
+              <li>
+                I have a written note permitting me to do so, 
+              </li>
+              <li>
+                Signed by multiple people,
+              </li>
+            </ul>
+            is that theft?
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="btn-group">
+                <button type="button" class="btn btn-info" ng-click="q2 = +1">Yes</button>
+                <button type="button" class="btn btn-warning" ng-click="q2 = -1">No</button>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div ng-show="q2===+1" >You have just stated that gangs, and mob bosses may not steal.</div>
+              <div ng-show="q2===-1" >So a gang, may demand money from you, as long as their gang boss told them to, and you are alright with that.</div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-default" ng-click="currentPanel=3" >Next</button>
+        </div>
+      </div>      
+      <div class="panel panel-default" ng-show="currentPanel===3">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            If I force money from you, and:
+            <ul>
+              <li>
+                I have a written note permitting me to do so, 
+              </li>
+              <li>
+                Signed by multiple people,
+              </li>
+              <li>
+                Part of the money collected is used to pay me to take money from other people,
+              </li>
+            </ul>
+            is that theft?
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="btn-group">
+                <button type="button" class="btn btn-info" ng-click="q3 = +1">Yes</button>
+                <button type="button" class="btn btn-warning" ng-click="q3 = -1">No</button>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div ng-show="q3===+1" >This means that you believe that extorting money from one person, to pay for extortion against another person is still wrong. You are moral person.</div>
+              <div ng-show="q3===-1" >So want to pay me to steal from your neighbors too. Are you kidding me?</div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-default" ng-click="currentPanel=4" >Next</button>
+        </div>
+      </div>      
+      <div class="panel panel-default" ng-show="currentPanel===4">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            If I force money from you, and:
+            <ul>
+              <li>
+                I have a written note permitting me to do so, 
+              </li>
+              <li>
+                Signed by multiple people,
+              </li>
+              <li>
+                Part of the money collected is used to pay me to take money from other people,
+              </li>
+              <li>
+                Multiple people are equialy victimized by this rule,
+              </li>
+            </ul>
+            is that theft?
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="btn-group">
+                <button type="button" class="btn btn-info" ng-click="q4 = +1">Yes</button>
+                <button type="button" class="btn btn-warning" ng-click="q4 = -1">No</button>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div ng-show="q4===+1" >So you have stated that theft from your community is as bad as theft from you.</div>
+              <div ng-show="q4===-1" >So, it is OK, as long as your neighbors are stolen from too?</div>
+            </div>
+          </div>
+         </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-default" ng-click="currentPanel=5" >Next</button>
+        </div>
+      </div>      
+      <div class="panel panel-default" ng-show="currentPanel===5">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            If I force money from you, and:
+            <ul>
+              <li>
+                I have a written note permitting me to do so, 
+              </li>
+              <li>
+                Signed by multiple people,
+              </li>
+              <li>
+                Part of the money collected is used to pay me to take money from other people,
+              </li>
+              <li>
+                Multiple people are equialy victimized by this rule,
+              </li>
+              <li>
+                Only part of your assets are taken,
+              </li>
+            </ul>
+            is that theft?
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="btn-group">
+                <button type="button" class="btn btn-info" ng-click="q5 = +1">Yes</button>
+                <button type="button" class="btn btn-warning" ng-click="q5 = -1">No</button>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div ng-show="q5===+1" >So you have stated that any amount of property removal is theft.</div>
+              <div ng-show="q5===-1" >So, it is OK for only some of your property to be stolen?</div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-default" ng-click="currentPanel=6" >Next</button>
+        </div>
+      </div>      
+      <div class="panel panel-default" ng-show="currentPanel===6">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            If I force money from you, and:
+            <ul>
+              <li>
+                I have a written note permitting me to do so, 
+              </li>
+              <li>
+                Signed by multiple people,
+              </li>
+              <li>
+                Part of the money collected is used to pay me to take money from other people,
+              </li>
+              <li>
+                Multiple people are equialy victimized by this rule,
+              </li>
+              <li>
+                Only part of your assets are taken,
+              </li>
+              <li>
+                You get to receive a fraction of what was taken back as a refund,
+              </li>
+            </ul>
+            is that theft?
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="btn-group">
+                <button type="button" class="btn btn-info" ng-click="q6 = +1">Yes</button>
+                <button type="button" class="btn btn-warning" ng-click="q6 = -1">No</button>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div ng-show="q6===+1" >I am glad to see that you realize that returning only a little of what is stolen is still theft.</div>
+              <div ng-show="q6===-1" >I see that I can bribe you with your own money, so that I can steal from you some more.</div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-default" ng-click="currentPanel=7" >Next</button>
+        </div>
+      </div>
+      <div class="panel panel-default" ng-show="currentPanel===7">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            If I force money from you, and:
+            <ul>
+              <li>
+                I have a written note permitting me to do so, 
+              </li>
+              <li>
+                Signed by multiple people,
+              </li>
+              <li>
+                Part of the money collected is used to pay me to take money from other people,
+              </li>
+              <li>
+                Multiple people are equialy victimized by this rule,
+              </li>
+              <li>
+                Only part of your assets are taken,
+              </li>
+              <li>
+                You get to receive a fraction of what was taken back as a refund,
+              </li>
+              <li>
+                You are required to report your income, so that I can compute how much I demand,
+              </li>
+            </ul>
+            is that theft?
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="btn-group">
+                <button type="button" class="btn btn-info" ng-click="q7 = +1">Yes</button>
+                <button type="button" class="btn btn-warning" ng-click="q7 = -1">No</button>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div ng-show="q7===+1" >Yes. Demanding you to itemize your wealth does not make this any less theft.</div>
+              <div ng-show="q7===-1" >A person holding you up at gun point, can demand an inventory of your posessions, 
+              and pick only what they want, leaving you the rest, and now you are fine with that. Seek help.</div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-default" ng-click="currentPanel=8" >Next</button>
+        </div>
+      </div>
+      <div class="panel panel-default" ng-show="currentPanel===8">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            If I force money from you, and:
+            <ul>
+              <li>
+                I have a written note permitting me to do so, 
+              </li>
+              <li>
+                Signed by multiple people,
+              </li>
+              <li>
+                Part of the money collected is used to pay me to take money from other people,
+              </li>
+              <li>
+                Multiple people are equialy victimized by this rule,
+              </li>
+              <li>
+                Only part of your assets are taken,
+              </li>
+              <li>
+                You get to receive a fraction of what was taken back as a refund,
+              </li>
+              <li>
+                You are required to report your income, so that I can compute how much I demand,
+              </li>
+              <li>
+                With the money going to a good or service that I claim is for the common good,
+              </li>
+            </ul>
+            is that theft?
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="btn-group">
+                <button type="button" class="btn btn-info" ng-click="q8 = +1">Yes</button>
+                <button type="button" class="btn btn-warning" ng-click="q8 = -1">No</button>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div ng-show="q8===+1" >You are right. I may want to spend that money on something that you don't like. 
+              Or worst, I may tell you one thing, and pocket the whole thing for myself.</div>
+              <div ng-show="q8===-1" >So you have no problem with someone stealing form you, as long as they are willing to slap a yellow smiley face on it.
+              <p>The government programs that are bleeding the tax payers dry are directly your fault.</p>
+              <ul>
+                <li>Freddie Mac & Fannie May - Both are broke</li>
+                <li>No Child Left Behind - Now we have decended to 17th in rank for education in modern countries.</li>
+                <li>Federal Reserve Bank - Broke. There is no reserve. They just print money with no backing.</li>
+                <li>War on Iraq - 10 Years later: We are still there.</li>
+                <li>War in Afghanistan - 10 Years later: We are still there.</li>
+                <li>Obamacare website - Still doesn't work right</li>
+                <li>Green Jobs <ul>
+                <li>A123 Systems Inc, Bankrupt; </li>
+                <li>Solyndra, Bankrupt; </li>
+                <li>Amonix Solar, Bankrupt; </li>
+                <li>Solar Trust of America, Bankrupt; </li>
+                <li>LSP Energy, Bankrupt; </li>
+                <li>Energy Concersion Devices, Bankrupt; </li>
+                <li>Abound Solar, Bankrupt; </li>
+                <li>SunPower, Bankrupt; </li>
+                <li>and it goes on and on.</li>
+                </ul>
+                </li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-default" ng-click="currentPanel=9" >Next</button>
+        </div>
+      </div>
+      <div class="panel panel-info" ng-show="currentPanel===9">
+        <div class="panel-heading">
+          <h3 class="panel-title">Your results</h3>
+        </div>
+        <div class="panel-body">
+          <h4>Your score:{{getTotal()}}</h4>
+          <div ng-show="getTotal() === 9">You have realized that all taxation is a form of theft. You are a true libertarian. You may actually be a Anarchist-Capitalist (ancap). Feel free to search that term for more information.</div>
+          <div ng-show="getTotal() < 9 && getTotal() >= 4">I see a spark of freedom coming. You may need to spend time at C4SS.org and FEE.org.</div>
+          <div ng-show="getTotal() < 4 && getTotal() >= -4">Really. You are just following the crowd. This is why you don't realize that all taxation is theft. Hit refresh, and retake the test. Actually read the challenges, and think about it.</div>
+          <div ng-show="getTotal() < -4 && getTotal() >= -8">You at least thought about 1 question, or you clicked on one wrong button. Lets assume the best, that it was at least one right button. Unless you are a slave, or a sociopath, you should think about your answers, and consider that you are saying that you voluneer to be the slave of people who are not morally superior to pond scum.</div>
+          <div ng-show="getTotal() === -9">I know that this is a joke to you. But please realize that there is nothing moral or ethical about government. You are just being enslaved by the wills of others. I am sorry that you just don't see this.</div>
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-primary" ng-click="reset()">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class-"footer">copyright 2014 - Brian Webb</div>
+  </body>
+</html>
