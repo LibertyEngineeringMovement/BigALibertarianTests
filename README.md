@@ -6,7 +6,7 @@ Well, this project is a collection of tests that are designed to question the id
 
 The last test I compose will be the big one, **Voting: Oppressing others by using a mob to do what you cannot force people to do yourself.**
 
-## Where the latest executable ##
+## Where can I see this run? ##
 http://embed.plnkr.co/fz3tg8BPf80MVAgEyCu6/preview 
 
 ## Tests ##
