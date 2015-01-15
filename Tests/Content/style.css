@@ -1,0 +1,10 @@
+﻿/* Styles go here */
+div.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 20px;
+  background: #000000;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
