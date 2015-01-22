@@ -6,5 +6,10 @@ div.footer {
   height: 20px;
   background: #000000;
   color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body {
+  background-color: #aaaaaa;
 }
 /*# sourceMappingURL=style.css.map */

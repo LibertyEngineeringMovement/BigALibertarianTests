@@ -4,26 +4,22 @@
     <title>Big A Libertarian Testing Ground</title>
     <link href="Content/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="Content/font-awesome.css" rel="stylesheet" />
+    <link href="Content/toastr.css" rel="stylesheet" />
     <link href="Content/style.css" rel="stylesheet" />
 </head>
-<body>
+<body ng-app="app">
     <div class="container">
         <h1>Big A Libertarian Tests</h1>
         <ol>
-            <li><a href="TaxOrTheftTest/index.html">Taxation  Or Theft</a></li>
-            <li>Victimless Crimes</li>
-            <li>Eminent Domain</li>
-            <li>Civil Forfeiture</li>
-            <li>Nationhood / Statehood</li>
-            <li>Licensing and Certifications</li>
-            <li>What about my roads?!? Public Utilities</li>
-            <li>Protecting Nature and Wildlife</li>
-            <li>Government or Charity</li>
-            <li>Charity or Free Market</li>
-            <li>What do you know about Anarchy</li>
-            <li>Voting vs Anarchy (Self Rule): Democracy is enslavementment</li>
+            <div ng-view></div>
         </ol>
     </div>
-    <div class-"footer">copyright 2014 - Brian Webb</div>
+    <div class="footer">copyright 2015 - Brian Webb</div>
+    <script src="Scripts/jquery-2.1.3.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/toastr.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="app/app.js"></script>
 </body>
 </html>
