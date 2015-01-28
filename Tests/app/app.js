@@ -6,10 +6,9 @@
     app.config(['$routeProvider', buildRoute]);
 
     app.controller('listCtrl', ['$http', buildListController]);
-    app.controller('testCtrl', ['$http', buildTestController]);
+    app.controller('testCtrl', ['$http', '$routeParams', buildTestController]);
 
     function buildRoute($routeProvider) {
-        toastr.info("Building Route");
 
         $routeProvider.
           when('/lists', {
@@ -18,8 +17,9 @@
               controllerAs: 'ctrl'
           }).
           when('/test/:testId', {
-              templateUrl: 'test/testDetail.html',
-              controller: 'testCtrl'
+              templateUrl: 'app/test/testDetail.html',
+              controller: 'testCtrl',
+              controllerAs: 'ctrl'
           }).
           otherwise({
               redirectTo: '/lists'
@@ -33,7 +33,7 @@
 
         function initialize() {
 
-            toastr.info("Initializing List");
+            toastr.info("Loading Test Catalog");
 
             $http.get('TestRepository/TestIndex.json')
                 .success(function (data, status, headers, config) {
@@ -47,8 +47,30 @@
         }
     }
 
-    function buildTestController($http) {
+    function buildTestController($http, $routeParams) {
         var me = this;
+        me.selection = '';
+
+        initialize();
+
+        function initialize() {
+
+            toastr.info("Loading the Test");
+
+            me.selection = $routeParams.testId;
+
+            $http.get('TestRepository/Test' + ('000' + me.selection.toString()).right(3) + '.json')
+                .success(function (data, status, headers, config) {
+                    toastr.success('Got Data', status);
+                    me.tests = data;
+                })
+                .error(function (data, status, headers, config) {
+                    toastr.error("Didn't get data.", data);
+                    me.tests = [];
+                })
+
+        }
+
     }
 
 })()

@@ -1,4 +1,7 @@
-﻿{{ctrl}}
-<li ng-repeat="row in ctrl.tests">
-    {{row.name}}
-</li>
+﻿<ul class="nav nav-pills nav-stacked">
+    <li ng-repeat="row in ctrl.tests">
+        <a class="btn btn-default btn-block" href="#/test/{{row.id}}">
+            {{row.name}}
+        </a>
+    </li>
+</ul>

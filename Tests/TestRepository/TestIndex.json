@@ -1,74 +1,14 @@
 [
     {
-        "name" : "Is taxation theft?",
-        "description" : "A simple exploration of a tax system in a non-voluntaryist society.",
-        "file":"Test000.js",
-        "id" : 0
+        "name": "Is taxation theft?",
+        "description": "A simple exploration of a tax system in a non-voluntaryist society.",
+        "file": "Test000.js",
+        "id": 0
     },
     {
-        "name" : "Was the constitution a good thing?",
-        "description" : "",
-        "file":"",
-        "id" : 1
-    },
-    {
-        "name" : "",
-        "description" : "",
-        "file":"",
-        "id" : 2
-    },
-    {
-        "name" : "",
-        "description" : "",
-        "file":"",
-        "id" : 3
-    },
-    {
-        "name" : "",
-        "description" : "",
-        "file":"",
-        "id" : 4
-    },
-    {
-        "name" : "",
-        "description" : "",
-        "file":"",
-        "id" : 5
-    },
-    {
-        "name" : "",
-        "description" : "",
-        "file":"",
-        "id" : 6
-    },
-    {
-        "name" : "",
-        "description" : "",
-        "file":"",
-        "id" : 7
-    },
-    {
-        "name" : "",
-        "description" : "",
-        "file":"",
-        "id" : 8
-    },
-    {
-        "name" : "",
-        "description" : "",
-        "file":"",
-        "id" : 9
-    },
-    {
-        "name" : "",
-        "description" : "",
-        "file":"",
-        "id" : 10
-    },
-    {
-        "name" : "",
-        "description" : "",
-        "file":"",
-        "id" : 11
-    },
+        "name": "Was the constitution a good thing?",
+        "description": "",
+        "file": "",
+        "id": 1
+    }
 ]
