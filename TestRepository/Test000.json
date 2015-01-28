@@ -5,17 +5,17 @@
     "questions": [
         {
             "id": 0,
-            "question": "",
+            "question": "Is this a question?",
             "buttons": [
                 { 
                     "value":1,
-                    "label":"",
-                    "selectedComment":""
+                    "label":"Yes",
+                    "selectedComment":"You are right."
                 },
                 {
                     "value":0,
-                    "label":"",
-                    "selectedComment":""
+                    "label":"No",
+                    "selectedComment":"Try again."
                 }
             ]
         }

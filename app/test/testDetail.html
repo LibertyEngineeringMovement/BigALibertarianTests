@@ -1,0 +1,100 @@
+﻿<h3 ng-bind="ctrl.test.name"></h3>
+<div class="well well-lg">
+    <div ng-bind-html="ctrl.test.description"></div>
+    <button class="btn btn-default btn-xs" ng-click="ctrl.toggleAssumptions()">
+        <span class="fa fa-minus-square" ng-show="ctrl.showAssumptions"></span>
+        <span class="fa fa-plus-square" ng-hide="ctrl.showAssumptions"></span>
+        Assumptions
+    </button>
+    <div class="well well-lg" 
+         ng-show="ctrl.showAssumptions"
+         ng-bind-html="ctrl.test.assumptions"></div>
+    <h6>Progress</h6>
+    <div class="progress">
+        <div class="progress-bar"
+                role="progressbar"
+                aria-valuenow="{{ctrl.currentQuestion}}"
+                aria-valuemin="0"
+                aria-valuemax="{{ctrl.questionCount}}"
+                style="width: {{ctrl.progressPercent}}%;">
+            <span class="sr-only">
+                {{ctrl.currentQuestionIdx + 1}}
+                question of
+                {{ctrl.questionCount}}
+            </span>
+        </div>
+    </div>
+</div>
+<div class="well well-lg">
+    <h4 ng-bind-html="ctrl.questionText"></h4>
+    <div class="btn-group" role="group">
+        <a class="btn btn-default {{b.selected === true ? 'active' : ''}}"
+ ng-repeat="b in ctrl.buttons"
+           ng-click="ctrl.selectAnswer(b)"
+           aria-pressed="{{b.selected === true ? 'true' : 'false'}}">
+            {{b.label}}
+        </a>
+    </div>
+    <div ng-bind-html="ctrl.btnComment"></div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-4 bg-info">
+        ctrl.test.questions.length
+    </div>
+    <div class="col-lg-4 bg-info">
+        ctrl.questionText
+    </div>
+    <div class="col-lg-4 bg-info">
+        ctrl.buttons
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4">
+        {{ctrl.test.questions.length}}
+    </div>
+    <div class="col-lg-4">
+        {{ctrl.questionText}}
+    </div>
+    <div class="col-lg-4">
+        {{ctrl.buttons}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4 bg-info">
+        ctrl.summaryVisible
+    </div>
+    <div class="col-lg-4 bg-info">
+        ctrl.currentQuestionObj
+    </div>
+    <div class="col-lg-4 bg-info">
+        ctrl.currentQuestion
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4">
+        {{ctrl.summaryVisible}}
+    </div>
+    <div class="col-lg-4">
+        {{ctrl.currentQuestionObj}}
+    </div>
+    <div class="col-lg-4">
+        {{ctrl.currentQuestionIdx}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 bg-info">
+        ctrl.progressPercent
+    </div>
+    <div class="col-lg-6 bg-info">
+        (ctrl.currentQuestionIdx / ctrl.questionCount) * 100
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        {{ctrl.progressPercent}}
+    </div>
+    <div class="col-lg-6">
+        ({{ctrl.currentQuestionIdx}} / {{ctrl.questionCount}}) * 100 = {{(ctrl.currentQuestionIdx / ctrl.questionCount) * 100}}
+    </div>
+</div>
