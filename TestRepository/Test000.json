@@ -5,19 +5,164 @@
     "questions": [
         {
             "id": 0,
-            "question": "Is this a question?",
+            "question": "If I force money from you, is that theft?",
             "buttons": [
-                { 
-                    "value":1,
-                    "label":"Yes",
-                    "selectedComment":"You are right."
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "This was a trick question for the purpose of determining if you should continue."
                 },
                 {
-                    "value":0,
-                    "label":"No",
-                    "selectedComment":"Try again."
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "Are you kidding? Stop right there. You have a mental deficiency, and the rest of the test is not applicable to you."
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "question": "If I force money from you, <ul><li>I have a written note permitting me to do so,</li></ul> Is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "You have just stated that written laws are not enough to justify theft."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "So you think a bank robber passing a note to a bank teller to empty their cash drawers is legitamate."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li></ul>is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "You have just stated that gangs, politicians, and mob bosses may not steal."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "So a gang, may demand money from you, as long as their gang boss told them to, and you are alright with that."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li>Part of the money collected is used to pay me to take money from other people,</li></ul>is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "This means that you believe that extorting money from one person, to pay for extortion against another person is still wrong. You are moral person."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "So you want to pay me to steal from your neighbors too. Are you kidding me?"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li><li>Part of the money collected is used to pay me to take money from other people,</li><li>Multiple people are equialy victimized by this rule,</li></ul>is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "So you have stated that theft from your community is as bad as theft from you."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "So, it is OK, as long as your neighbors are stolen from too?"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "xIf I force money from you, <ul><li>I have a written note permitting me to do so,</li></ul> Is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "xYou have just stated that written laws are not enough to justify theft."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "xSo you think a bank robber passing a note to a bank teller to empty their cash drawers is legitamate."
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "xIf I force money from you, <ul><li>I have a written note permitting me to do so,</li></ul> Is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "xYou have just stated that written laws are not enough to justify theft."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "xSo you think a bank robber passing a note to a bank teller to empty their cash drawers is legitamate."
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "xIf I force money from you, <ul><li>I have a written note permitting me to do so,</li></ul> Is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "xYou have just stated that written laws are not enough to justify theft."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "xSo you think a bank robber passing a note to a bank teller to empty their cash drawers is legitamate."
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "xIf I force money from you, <ul><li>I have a written note permitting me to do so,</li></ul> Is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "xYou have just stated that written laws are not enough to justify theft."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "xSo you think a bank robber passing a note to a bank teller to empty their cash drawers is legitamate."
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "xIf I force money from you, <ul><li>I have a written note permitting me to do so,</li></ul> Is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "xYou have just stated that written laws are not enough to justify theft."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "xSo you think a bank robber passing a note to a bank teller to empty their cash drawers is legitamate."
                 }
             ]
         }
+
     ]
 }

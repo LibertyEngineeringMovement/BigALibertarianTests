@@ -118,21 +118,27 @@
         }
 
         function nextQuestion() {
-            me.currentQuestion = me.currentQuestion + 1;
+            me.currentQuestionIdx = me.currentQuestionIdx + 1;
 
             loadQuestion();
         }
 
         function loadQuestion() {
             if (me.currentQuestionIdx < me.questionCount) {
+                me.progressPercent = (me.currentQuestionIdx / me.questionCount) * 100;
+
                 me.currentQuestionObj = me.test.questions[me.currentQuestionIdx];
                 me.questionText
                     = me.currentQuestionObj.question;
                 me.buttons
                     = me.currentQuestionObj.buttons;
+
+                me.btnComment = '';
             }
             else {
                 me.summaryVisible = true;
+                me.progressPercent = 100;
+
             }
         }
     }
