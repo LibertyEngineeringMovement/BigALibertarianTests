@@ -558,6 +558,19 @@ if (!String.prototype.format) { //"some{0}value".format("text") => "sometextvalu
         });
     };
 
+// Non numbers are ignored in the array. However if you pass in a non-array, then you will get a "NotAnArray" exception.
+    Math.sum = Math.sum || function (arrayValue) {
+        var ret = 0;
+        if (Array.isArray(arrayValue)) {
+            for (var i = 0; i < arrayValue.length; i++) {
+                if (!arrayValue[i].isNaN){
+                    ret += arrayValue[i];
+                }
+            }
+            return ret;
+        }
+        throw "NotAnArray";
+    }
 
 /*Angular Specific Digest() Command*/
 function Digest($scope) {

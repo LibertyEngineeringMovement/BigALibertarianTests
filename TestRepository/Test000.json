@@ -85,22 +85,6 @@
         },
         {
             "id": 5,
-            "question": "xIf I force money from you, <ul><li>I have a written note permitting me to do so,</li></ul> Is that theft?",
-            "buttons": [
-                {
-                    "value": 1,
-                    "label": "Yes",
-                    "selectedComment": "xYou have just stated that written laws are not enough to justify theft."
-                },
-                {
-                    "value": -1,
-                    "label": "No",
-                    "selectedComment": "xSo you think a bank robber passing a note to a bank teller to empty their cash drawers is legitamate."
-                }
-            ]
-        },
-        {
-            "id": 6,
             "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li><li>Part of the money collected is used to pay me to take money from other people,</li><li>Multiple people are equialy victimized by this rule,</li><li>Only part of your assets are taken,</li></ul>is that theft?",
             "buttons": [
                 {
@@ -116,7 +100,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": 6,
             "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li><li>Part of the money collected is used to pay me to take money from other people,</li><li>Multiple people are equialy victimized by this rule,</li><li>Only part of your assets are taken,</li><li>You get to receive a fraction of what was taken back as a refund,</li></ul>is that theft?",
             "buttons": [
                 {
@@ -132,7 +116,7 @@
             ]
         },
         {
-            "id": 8,
+            "id": 7,
             "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li><li>Part of the money collected is used to pay me to take money from other people,</li><li>Multiple people are equialy victimized by this rule,</li><li>Only part of your assets are taken,</li><li>You get to receive a fraction of what was taken back as a refund,</li><li>You are required to report your income, so that I can compute how much I demand,</li></ul>is that theft?",
             "buttons": [
                 {
@@ -148,7 +132,7 @@
             ]
         },
         {
-            "id": 9,
+            "id": 8,
             "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li><li>Part of the money collected is used to pay me to take money from other people,</li><li>Multiple people are equialy victimized by this rule,</li><li>Only part of your assets are taken,</li><li>You get to receive a fraction of what was taken back as a refund,</li><li>You are required to report your income, so that I can compute how much I demand,</li><li>With the money going to a good or service that I claim is for the common good,</li></ul>is that theft?",
             "buttons": [
                 {
@@ -206,12 +190,12 @@
             "caption": "I see a spark of freedom coming. You may need to spend time at <a href='http://C4SS.org' target='_blank'>C4SS.org</a> and <a href='http://FEE.org' target='_blank'>FEE.org</a>."
         },
         {
-            "score": 8, 
-            "caption": "I see a spark of freedom coming. You may need to spend time at <a href='http://C4SS.org' target='_blank'>C4SS.org</a> and <a href='http://FEE.org' target='_blank'>FEE.org</a>." },
+            "score": 8,
+            "caption": "I see a spark of freedom coming. You may need to spend time at <a href='http://C4SS.org' target='_blank'>C4SS.org</a> and <a href='http://FEE.org' target='_blank'>FEE.org</a>."
+        },
         {
-            
             "score": 9,
-            "caption": "You have realized that all taxation is a form of theft. You are a true libertarian. You may actually be a Anarchist-Capitalist (ancap). Feel free to search that term for more information."
+            "caption": "You have realized that all taxation is a form of theft. You are a true libertarian.<br/>You may actually be a Anarchist-Capitalist (ancap).<br/>Feel free to search that term for more information."
         }
     ]
 }

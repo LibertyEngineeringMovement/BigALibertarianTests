@@ -12,3 +12,4 @@
 /// <reference path="angular-touch.js" />
 /// <reference path="angular.js" />
 /// <reference path="bootstrap.js" />
+/// <reference path="Common.js" />

@@ -67,6 +67,9 @@
         me.selectAnswer = selectAnswer;
         me.nextQuestion = nextQuestion;
         me.toggleAssumptions = toggleAssumptions;
+        me.score = [];
+        me.scoreTotal = 0;
+        me.resultMessage = '';
         
 
         initialize();
@@ -113,6 +116,9 @@
                 me.buttons[i].selected = false;
             }
             button.selected = true;
+            me.score[me.currentQuestionIdx] = button.value;
+            me.scoreTotal = Math.sum(me.score);
+
             me.btnComment = button.selectedComment;
 
         }
@@ -128,6 +134,7 @@
                 me.progressPercent = (me.currentQuestionIdx / me.questionCount) * 100;
 
                 me.currentQuestionObj = me.test.questions[me.currentQuestionIdx];
+
                 me.questionText
                     = me.currentQuestionObj.question;
                 me.buttons
@@ -136,8 +143,15 @@
                 me.btnComment = '';
             }
             else {
-                me.summaryVisible = true;
                 me.progressPercent = 100;
+                me.summaryVisible = true;
+
+                var msg = me.test.results.find(
+                    function (row){ 
+                        return row.score === me.scoreTotal; 
+                    }).caption;
+
+                me.resultMessage = msg || '';
 
             }
         }
