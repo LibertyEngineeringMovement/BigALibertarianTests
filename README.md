@@ -1,18 +1,28 @@
-# BigALibertarianTests
-Big A Libertarian Test is a test collection to see how much of a libertarian the test taker is.
+# What is it? #
 
-# New version Coming #
+This is the rewrite of the BigALibertarianTests.
 
-## Why ##
+# Why? #
 
-* I don't like writing code more than once. So when I create a test, I just want the test to be a document, that gets loaded into the existing code.
-* I like unit testing. That is, I like to know when I break something everytime I make a change, so I know what to fix.
+Because the solid open source client side test environment is needed.
 
-## New Features Roadmap ##
+# No, I mean why Open Source?#
 
-01. List of tests. This is an index file of tests that are ready to be ran, and a list of tests that are still coming.
-02. The test. This is a file that contains the test, its assumptions, descriptions, questions, and answers
-03. Routing. That is all tests will now load by routing, so that we can actually take advantage of the routing tables.
-04. Unit Testing. This is mostly for the controller, but I like to add it to the directives.
-05. Directives for the questions themselves. More modular design.
-06. Certification of completion page.
+Because Good ideas want to be free to evolve. Keeping them caged up in copyrights and patents cause good ideas to wither.
+
+
+## Future Tests ##
+
+1. Taxation
+2. Victimless Crimes
+3. Eminent Domain
+4. Civil Forfeiture
+5. Nationhood / Statehood
+6. Licensing and Certifications
+7. What about my roads?!? Public Utilities
+8. Protecting Nature and Wildlife
+9. Government or Charity
+10. Charity or Free Market
+11. What do you know about Anarchy
+11. Voting vs Anarchy (Self Rule): Democracy is enslavement
+
