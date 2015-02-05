@@ -1,0 +1,48 @@
+﻿<h3 ng-bind="ctrl.test.name"></h3>
+<div class="well well-lg">
+    <div ng-bind-html="ctrl.test.description"></div>
+    <button class="btn btn-default btn-xs" ng-click="ctrl.toggleAssumptions()">
+        <span class="fa fa-minus-square" ng-show="ctrl.showAssumptions"></span>
+        <span class="fa fa-plus-square" ng-hide="ctrl.showAssumptions"></span>
+        Assumptions
+    </button>
+    <div class="well well-lg"
+         ng-show="ctrl.showAssumptions"
+         ng-bind-html="ctrl.test.assumptions"></div>
+    <h6>Progress</h6>
+    <div class="progress">
+        <div class="progress-bar"
+             role="progressbar"
+             aria-valuenow="{{ctrl.currentQuestionIdx}}"
+             aria-valuemin="0"
+             aria-valuemax="{{ctrl.questionCount}}"
+             ng-style="{width: ctrl.progressPercent + '%'}">
+            <span class="sr-only">
+                {{ctrl.currentQuestionIdx + 1}}
+                question of
+                {{ctrl.questionCount}}
+            </span>
+        </div>
+    </div>
+</div>
+<div class="well well-lg" ng-hide="ctrl.summaryVisible">
+    <h4 ng-bind-html="ctrl.questionText"></h4>
+    <div class="btn-group" role="group">
+        <a class="btn btn-default {{b.selected === true ? 'active' : ''}}"
+           ng-repeat="b in ctrl.buttons"
+           ng-click="ctrl.selectAnswer(b)"
+           aria-pressed="{{b.selected === true ? 'true' : 'false'}}">
+            {{b.label}}
+        </a>
+    </div>
+    <div class="well well-sm" ng-hide="ctrl.btnComment === ''" ng-bind-html="ctrl.btnComment"></div>
+    <button class="btn btn-primary btn-lg" ng-hide="ctrl.btnComment === ''" ng-click="ctrl.nextQuestion()">Next question</button>
+</div>
+<div class="well well-lg" ng-show="ctrl.summaryVisible">
+    <h4 class="text-center">Test Complete</h4>
+    <div class="text-center">
+        {{ctrl.resultMessage}}
+    </div>
+    <h4 class="text-center">Final Score</h4>
+    <h1 class="text-center">{{ctrl.scoreTotal}}</h1>
+</div>

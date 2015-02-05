@@ -1,0 +1,201 @@
+﻿{
+    "name": "Is taxation theft?",
+    "description": "A simple exploration of a tax system in a non-voluntaryist society.",
+    "assumptions": "<ul><li>Non-compliance will result in actions that include the following:<ol><li>You may find your property, and wages taken from you.</li><li>You may find your movement and life constrained to a limited sized cage.</li><li>You may find your life removed from you by execution or murder.</li></ol></li><li>Enforcers of the following will be people who are wearing matching uniforms.</li><li>You may seek arbitration, but it will only be through the same organization that enforces compliance.</li></ul>",
+    "questions": [
+        {
+            "id": 0,
+            "question": "If I force money from you, is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "This was a trick question for the purpose of determining if you should continue."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "Are you kidding? Stop right there. You have a mental deficiency, and the rest of the test is not applicable to you."
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "question": "If I force money from you, <ul><li>I have a written note permitting me to do so,</li></ul> Is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "You have just stated that written laws are not enough to justify theft."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "So you think a bank robber passing a note to a bank teller to empty their cash drawers is legitamate."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li></ul>is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "You have just stated that gangs, politicians, and mob bosses may not steal."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "So a gang, may demand money from you, as long as their gang boss told them to, and you are alright with that."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li><li>Part of the money collected is used to pay me to take money from other people,</li></ul>is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "This means that you believe that extorting money from one person, to pay for extortion against another person is still wrong. You are moral person."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "So you want to pay me to steal from your neighbors too. Are you kidding me?"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li><li>Part of the money collected is used to pay me to take money from other people,</li><li>Multiple people are equally victimized by this rule,</li></ul>is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "So you have stated that theft from your community is as bad as theft from you."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "So, it is OK, as long as your neighbors are stolen from too?"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li><li>Part of the money collected is used to pay me to take money from other people,</li><li>Multiple people are equialy victimized by this rule,</li><li>Only part of your assets are taken,</li></ul>is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "So you have stated that any amount of property removal is theft."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "So, it is OK for only some of your property to be stolen?"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li><li>Part of the money collected is used to pay me to take money from other people,</li><li>Multiple people are equialy victimized by this rule,</li><li>Only part of your assets are taken,</li><li>You get to receive a fraction of what was taken back as a refund,</li></ul>is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "I am glad to see that you realize that returning only a little of what is stolen is still theft."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "I see that I can bribe you with your own money, so that I can steal from you some more."
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li><li>Part of the money collected is used to pay me to take money from other people,</li><li>Multiple people are equialy victimized by this rule,</li><li>Only part of your assets are taken,</li><li>You get to receive a fraction of what was taken back as a refund,</li><li>You are required to report your income, so that I can compute how much I demand,</li></ul>is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "Yes. Demanding you to itemize your wealth does not make this any less theft."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "A person holding you up at gun point, can demand an inventory of your posessions, and pick only what they want, leaving you the rest, and now you are fine with that. Seek help."
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "If I force money from you, and:<ul><li>I have a written note permitting me to do so,</li><li>Signed by multiple people,</li><li>Part of the money collected is used to pay me to take money from other people,</li><li>Multiple people are equialy victimized by this rule,</li><li>Only part of your assets are taken,</li><li>You get to receive a fraction of what was taken back as a refund,</li><li>You are required to report your income, so that I can compute how much I demand,</li><li>With the money going to a good or service that I claim is for the common good,</li></ul>is that theft?",
+            "buttons": [
+                {
+                    "value": 1,
+                    "label": "Yes",
+                    "selectedComment": "You are right. I may want to spend that money on something that you don't like. Or worst, I may tell you one thing, and pocket the whole thing for myself."
+                },
+                {
+                    "value": -1,
+                    "label": "No",
+                    "selectedComment": "So you have no problem with someone stealing form you, as long as they are willing to slap a yellow smiley face on it.<p>The government programs that are bleeding the tax payers dry are directly your fault.</p><ul><li>Freddie Mac &amp; Fannie May - Both are broke</li><li>No Child Left Behind - Now we have decended to 17th in rank for education in modern countries.</li><li>Federal Reserve Bank - Broke. There is no reserve. They just print money with no backing.</li><li>War on Iraq - 10 Years later: We are still there.</li><li>War in Afghanistan - 10 Years later: We are still there.</li><li>Obamacare website - Still doesn't work right</li><li>Green Jobs <ul><li>A123 Systems Inc, Bankrupt; </li><li>Solyndra, Bankrupt; </li><li>Amonix Solar, Bankrupt; </li><li>Solar Trust of America, Bankrupt; </li><li>LSP Energy, Bankrupt; </li><li>Energy Concersion Devices, Bankrupt; </li><li>Abound Solar, Bankrupt; </li><li>SunPower, Bankrupt; </li><li>and it goes on and on.</li></ul></li></ul>"
+                }
+            ]
+        }
+    ],
+    "results": [
+        {
+            
+            "score": 0,
+            "caption": "I know that this is a joke to you. But please realize that there is nothing moral or ethical about government. You are just being enslaved by the wills of others. I am sorry that you just don't see this."
+        },
+        {
+            
+            "score": 1,
+            "caption": "You at least thought about 1 question, or you clicked on one wrong button. Lets assume the best, that it was at least one right button. Unless you are a slave, or a sociopath, you should think about your answers, and consider that you are saying that you volunteer to be the slave of people who are not morally superior to pond scum."
+        },
+        {
+            
+            "score": 2,
+            "caption": "Really. You are just following the crowd. This is why you don't realize that all taxation is theft. Hit refresh, and retake the test. Actually read the challenges, and think about it."
+        },
+        {
+            
+            "score": 3,
+            "caption": "Really. You are just following the crowd. This is why you don't realize that all taxation is theft. Hit refresh, and retake the test. Actually read the challenges, and think about it."
+        },
+        {
+            
+            "score": 4,
+            "caption": "Really. You are just following the crowd. This is why you don't realize that all taxation is theft. Hit refresh, and retake the test. Actually read the challenges, and think about it."
+        },
+        {
+            
+            "score": 5,
+            "caption": "I see a spark of freedom coming. You may need to spend time at <a href='http://C4SS.org' target='_blank'>C4SS.org</a> and <a href='http://FEE.org' target='_blank'>FEE.org</a>."
+        },
+        {
+            
+            "score": 6,
+            "caption": "I see a spark of freedom coming. You may need to spend time at <a href='http://C4SS.org' target='_blank'>C4SS.org</a> and <a href='http://FEE.org' target='_blank'>FEE.org</a>."
+        },
+        {
+            
+            "score": 7,
+            "caption": "I see a spark of freedom coming. You may need to spend time at <a href='http://C4SS.org' target='_blank'>C4SS.org</a> and <a href='http://FEE.org' target='_blank'>FEE.org</a>."
+        },
+        {
+            "score": 8,
+            "caption": "I see a spark of freedom coming. You may need to spend time at <a href='http://C4SS.org' target='_blank'>C4SS.org</a> and <a href='http://FEE.org' target='_blank'>FEE.org</a>."
+        },
+        {
+            "score": 9,
+            "caption": "You have realized that all taxation is a form of theft. You are a true libertarian.<br/>You may actually be a Anarchist-Capitalist (ancap).<br/>Feel free to search that term for more information."
+        }
+    ]
+}

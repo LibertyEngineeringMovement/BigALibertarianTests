@@ -1,15 +1,17 @@
-# What is this. #
+# What is it? #
 
-Have you though, "How can I get people to understand that there is no morality in supporting any government? How can I show that the use of force in any form except in self defense is amoral?"
+This is the rewrite of the BigALibertarianTests.
 
-Well, this project is a collection of tests that are designed to question the ideas that lead to our enslavement by those who we keep voting for.
+# Why? #
 
-The last test I compose will be the big one, **Voting: Oppressing others by using a mob to do what you cannot force people to do yourself.**
+Because the solid open source client side test environment is needed.
 
-## Where can I see this run? ##
-http://embed.plnkr.co/fz3tg8BPf80MVAgEyCu6/preview 
+# No, I mean why Open Source?#
 
-## Tests ##
+Because Good ideas want to be free to evolve. Keeping them caged up in copyrights and patents cause good ideas to wither.
+
+
+## Future Tests ##
 
 1. Taxation
 2. Victimless Crimes
