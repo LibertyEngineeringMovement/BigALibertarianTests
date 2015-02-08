@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
 <head>
     <title>Big A Libertarian Testing Ground</title>
     <link href="Content/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -7,8 +7,13 @@
     <link href="Content/toastr.css" rel="stylesheet" />
     <link href="Content/style.css" rel="stylesheet" />
 </head>
-<body ng-app="app">
+<body>
     <div class="container">
+        <div class="rel-top-right">
+            <a class="btn btn-primary btn-sm" href="https://github.com/LibertyEngineeringMovement/BigALibertarianTests">
+                Get this project on Github
+            </a>
+        </div>
         <h4>Big A Libertarian Tests</h4>
         <div ng-view></div>
     </div>
@@ -18,8 +23,11 @@
     <script src="Scripts/angular-route.js"></script>
     <script src="Scripts/angular-sanitize.js"></script>
     <script src="Scripts/toastr.js"></script>
+    <script src="Scripts/toastrconfig.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/Common.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/ListController.js"></script>
+    <script src="app/TestController.js"></script>
 </body>
 </html>

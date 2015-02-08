@@ -1,1 +1,1 @@
-﻿div.footer{position:absolute;width:100%;bottom:0;height:20px;background:#000;color:#fff;padding-left:10px;padding-right:10px}body{background-color:#aaa}
+﻿div.footer{position:absolute;width:100%;bottom:0;height:20px;background:#000;color:#fff;padding-left:10px;padding-right:10px}body{background-color:#aaa}div .abs-top-right{position:absolute;top:0;right:0;left:auto}div .rel-top-right{position:relative;top:0;right:0;left:auto;float:right}div .sta-top-right{position:static;top:0;right:0;left:auto}

@@ -1,0 +1,10 @@
+﻿{
+  "ignore": [],
+  "options": {
+    "predef": {},
+    "passfail": false
+  },
+  "runOnSave": false,
+  "runOnBuild": false,
+  "cancelBuild": false
+}

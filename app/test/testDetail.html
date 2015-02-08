@@ -40,8 +40,7 @@
 </div>
 <div class="well well-lg" ng-show="ctrl.summaryVisible">
     <h4 class="text-center">Test Complete</h4>
-    <div class="text-center">
-        {{ctrl.resultMessage}}
+    <div class="text-center" ng-bind-html="ctrl.resultMessage">
     </div>
     <h4 class="text-center">Final Score</h4>
     <h1 class="text-center">{{ctrl.scoreTotal}}</h1>

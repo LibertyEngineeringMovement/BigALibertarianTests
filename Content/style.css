@@ -12,4 +12,23 @@ div.footer {
 body {
   background-color: #aaaaaa;
 }
+div .abs-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+}
+div .rel-top-right {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: auto;
+  float: right;
+}
+div .sta-top-right {
+  position: static;
+  top: 0;
+  right: 0;
+  left: auto;
+}
 /*# sourceMappingURL=style.css.map */

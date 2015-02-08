@@ -13,3 +13,4 @@
 /// <reference path="angular.js" />
 /// <reference path="bootstrap.js" />
 /// <reference path="Common.js" />
+/// <reference path="angular.intellisense.js" />
