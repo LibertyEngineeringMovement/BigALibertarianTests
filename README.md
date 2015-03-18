@@ -26,3 +26,7 @@ Because Good ideas want to be free to evolve. Keeping them caged up in copyright
 11. What do you know about Anarchy
 11. Voting vs Anarchy (Self Rule): Democracy is enslavement
 
+# Development Attribution #
+
+* Brian Webb
+* (Space reserved to future contributors.)
