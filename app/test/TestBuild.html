@@ -41,18 +41,34 @@
             </div>
             <div class="panel-collapse collapse" ng-class="{'in': (ctrl.tabid===2)}">
                 <div class="panel-body">
-                    <div class="well well-sm" ng-repeat="q in ctrl.test.questions | orderBy: 'id'">
-                        <table class="table">
+                    <div class="btn-group btn-group-justified">
+                        <button class="btn btn-default" ng-click="ctrl.addQuestion()">Add Question</button>
+                    </div>
+                    <table class="table">
+                        <colgroup>
+                            <col style="width:40px;" />
+                            <col />
+                        </colgroup>
+                        <tbody ng-repeat="q in ctrl.test.questions | orderBy: 'id'">
                             <tr>
                                 <td>
                                     <input type="number" ng-model="q.id" />
                                 </td>
                                 <td>
+                                    <button type="button" 
+                                            class="btn btn-default btn-block btn-xs" 
+                                            ng-click="q.__showMe = !q.__showMe">
+                                        <small>Show</small>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr ng-if="q.__showMe">
+                                <td colspan="2">
                                     <textarea ui-tinymce ng-model="q.question"></textarea>
                                 </td>
                             </tr>
-                        </table>
-                    </div>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

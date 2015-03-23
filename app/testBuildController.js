@@ -8,10 +8,14 @@
 
     function buildTestBuildController($http) {
         var me = this;
-        me.test = {};
+        me.test = {
+            name: '',
+            questions: [],
+        };
         me.tabid === 0;
 
         me.changeTab = changeTab;
+        me.addQuestion = addQuestion;
 
         initialize();
         function initialize() {
@@ -24,6 +28,11 @@
             else {
                 me.tabid = TabId;
             }
+        }
+        function addQuestion() {
+            var q = {};
+            q.id = me.test.questions.length;
+            me.test.questions.push(q);
         }
     }
 
