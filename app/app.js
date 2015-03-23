@@ -4,7 +4,8 @@
 
     var app = angular.module('app', [
         'ngRoute',
-        'ngSanitize'
+        'ngSanitize',
+        'ui.tinymce'
     ]);
 
     app.config(['$routeProvider', buildRoute]);

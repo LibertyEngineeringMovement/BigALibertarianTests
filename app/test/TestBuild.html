@@ -1,7 +1,63 @@
-﻿<h3>This is the build page.</h3>
-<div class="row">
-    <div class="col-md-10">{{ctrl.test}}</div>
-    <div class="col-md-2">
-        <input-file type="file" file-model="ctrl.test" />
+﻿<h3>buiding for <span ng-bind="ctrl.test.name"></span></h3>
+<form class="form">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading" ng-click="ctrl.changeTab(0)">
+                <h3 class="panel-title">Load</h3>
+            </div>
+            <div class="panel-collapse collapse" ng-class="{'in': (ctrl.tabid===0)}">
+                <div class="panel-body">
+                    <input-file type="file" file-model="ctrl.test" />
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" ng-click="ctrl.changeTab(1)">
+                <h3 class="panel-title">Header</h3>
+            </div>
+            <div class="panel-collapse collapse" ng-class="{'in': (ctrl.tabid===1)}">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label>
+                            Name
+                        </label>
+                        <input class="form-control" type="text" ng-model="ctrl.test.name" />
+
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea class="form-control" ui-tinymce ng-model="ctrl.test.description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Assuptions</label>
+                        <textarea class="form-control" ui-tinymce ng-model="ctrl.test.assumptions"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" ng-click="ctrl.changeTab(2)">
+                <h3 class="panel-title">Questions</h3>
+            </div>
+            <div class="panel-collapse collapse" ng-class="{'in': (ctrl.tabid===2)}">
+                <div class="panel-body">
+                    <div class="well well-sm" ng-repeat="q in ctrl.test.questions | orderBy: 'id'">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <input type="number" ng-model="q.id" />
+                                </td>
+                                <td>
+                                    <textarea ui-tinymce ng-model="q.question"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</form>
+<div class="well well-sm">
+    {{ctrl}}
 </div>

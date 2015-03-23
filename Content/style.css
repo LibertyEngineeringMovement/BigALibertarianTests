@@ -4,7 +4,7 @@ body {
   background-color: #aaaaaa;
 }
 div.footer {
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
   height: 20px;
@@ -45,6 +45,9 @@ div .sta-top-right {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+}
+#forkme_banner .highlight {
+  background: #f0f3f3;
   /* Comment */
   /* Error */
   /* Keyword */
@@ -109,16 +112,13 @@ div .sta-top-right {
 #forkme_banner .highlight .hll {
   background-color: #ffffcc;
 }
-#forkme_banner .highlight {
-  background: #f0f3f3;
-}
 #forkme_banner .highlight .c {
   color: #0099FF;
   font-style: italic;
 }
 #forkme_banner .highlight .err {
   color: #AA0000;
-  background-color: #ffaaaa;
+  background-color: #FFAAAA;
 }
 #forkme_banner .highlight .k {
   color: #006699;
@@ -145,13 +145,13 @@ div .sta-top-right {
 }
 #forkme_banner .highlight .gd {
   background-color: #FFCCCC;
-  border: 1px solid #cc0000;
+  border: 1px solid #CC0000;
 }
 #forkme_banner .highlight .ge {
   font-style: italic;
 }
 #forkme_banner .highlight .gr {
-  color: #ff0000;
+  color: #FF0000;
 }
 #forkme_banner .highlight .gh {
   color: #003300;
@@ -159,10 +159,10 @@ div .sta-top-right {
 }
 #forkme_banner .highlight .gi {
   background-color: #CCFFCC;
-  border: 1px solid #00cc00;
+  border: 1px solid #00CC00;
 }
 #forkme_banner .highlight .go {
-  color: #aaaaaa;
+  color: #AAAAAA;
 }
 #forkme_banner .highlight .gp {
   color: #000099;
@@ -176,7 +176,7 @@ div .sta-top-right {
   font-weight: bold;
 }
 #forkme_banner .highlight .gt {
-  color: #99cc66;
+  color: #99CC66;
 }
 #forkme_banner .highlight .kc {
   color: #006699;
@@ -202,10 +202,10 @@ div .sta-top-right {
   font-weight: bold;
 }
 #forkme_banner .highlight .m {
-  color: #ff6600;
+  color: #FF6600;
 }
 #forkme_banner .highlight .s {
-  color: #cc3300;
+  color: #CC3300;
 }
 #forkme_banner .highlight .na {
   color: #330099;
@@ -221,7 +221,7 @@ div .sta-top-right {
   color: #336600;
 }
 #forkme_banner .highlight .nd {
-  color: #9999ff;
+  color: #9999FF;
 }
 #forkme_banner .highlight .ni {
   color: #999999;
@@ -232,10 +232,10 @@ div .sta-top-right {
   font-weight: bold;
 }
 #forkme_banner .highlight .nf {
-  color: #cc00ff;
+  color: #CC00FF;
 }
 #forkme_banner .highlight .nl {
-  color: #9999ff;
+  color: #9999FF;
 }
 #forkme_banner .highlight .nn {
   color: #00CCFF;
@@ -256,51 +256,51 @@ div .sta-top-right {
   color: #bbbbbb;
 }
 #forkme_banner .highlight .mf {
-  color: #ff6600;
+  color: #FF6600;
 }
 #forkme_banner .highlight .mh {
-  color: #ff6600;
+  color: #FF6600;
 }
 #forkme_banner .highlight .mi {
-  color: #ff6600;
+  color: #FF6600;
 }
 #forkme_banner .highlight .mo {
-  color: #ff6600;
+  color: #FF6600;
 }
 #forkme_banner .highlight .sb {
-  color: #cc3300;
+  color: #CC3300;
 }
 #forkme_banner .highlight .sc {
-  color: #cc3300;
+  color: #CC3300;
 }
 #forkme_banner .highlight .sd {
   color: #CC3300;
   font-style: italic;
 }
 #forkme_banner .highlight .s2 {
-  color: #cc3300;
+  color: #CC3300;
 }
 #forkme_banner .highlight .se {
   color: #CC3300;
   font-weight: bold;
 }
 #forkme_banner .highlight .sh {
-  color: #cc3300;
+  color: #CC3300;
 }
 #forkme_banner .highlight .si {
-  color: #aa0000;
+  color: #AA0000;
 }
 #forkme_banner .highlight .sx {
-  color: #cc3300;
+  color: #CC3300;
 }
 #forkme_banner .highlight .sr {
-  color: #33aaaa;
+  color: #33AAAA;
 }
 #forkme_banner .highlight .s1 {
-  color: #cc3300;
+  color: #CC3300;
 }
 #forkme_banner .highlight .ss {
-  color: #ffcc33;
+  color: #FFCC33;
 }
 #forkme_banner .highlight .bp {
   color: #336666;
@@ -315,28 +315,28 @@ div .sta-top-right {
   color: #003333;
 }
 #forkme_banner .highlight .il {
-  color: #ff6600;
+  color: #FF6600;
 }
 #forkme_banner .type-csharp .highlight .k {
-  color: #0000ff;
+  color: #0000FF;
 }
 #forkme_banner .type-csharp .highlight .kt {
-  color: #0000ff;
+  color: #0000FF;
 }
 #forkme_banner .type-csharp .highlight .nf {
   color: #000000;
   font-weight: normal;
 }
 #forkme_banner .type-csharp .highlight .nc {
-  color: #2b91af;
+  color: #2B91AF;
 }
 #forkme_banner .type-csharp .highlight .nn {
   color: #000000;
 }
 #forkme_banner .type-csharp .highlight .s {
-  color: #a31515;
+  color: #A31515;
 }
 #forkme_banner .type-csharp .highlight .sc {
-  color: #a31515;
+  color: #A31515;
 }
 /*# sourceMappingURL=style.css.map */

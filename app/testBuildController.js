@@ -9,9 +9,21 @@
     function buildTestBuildController($http) {
         var me = this;
         me.test = {};
+        me.tabid === 0;
+
+        me.changeTab = changeTab;
 
         initialize();
         function initialize() {
+        }
+
+        function changeTab(TabId) {
+            if (me.tabid === TabId) {
+                me.tabid = -1;
+            }
+            else {
+                me.tabid = TabId;
+            }
         }
     }
 
