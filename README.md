@@ -1,3 +1,7 @@
+<font color='red'>
+# Archived, the rewrite will be done in newer versions of Angular. #
+</font>
+
 # What is it? #
 
 This is the rewrite of the BigALibertarianTests.
