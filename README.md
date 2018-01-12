@@ -1,6 +1,4 @@
-<font color='red'>
-# Archived, the rewrite will be done in newer versions of Angular. #
-</font>
+# ARCHIVED the rewrite will be done in newer versions of Angular.
 
 # What is it? #
 
